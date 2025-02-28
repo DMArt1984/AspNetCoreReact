@@ -1,8 +1,17 @@
-﻿import React from 'react';
-import ReactDOM from 'react-dom';
+﻿import React, { useState } from "react";
+import ReactDOM from "react-dom";
 
 function App() {
-    return <h1>Привет из React, встроенного в ASP.NET Core!</h1>;
+    const [count, setCount] = useState(0);
+
+    return (
+        <div style={{ textAlign: "center", marginTop: "50px" }}>
+            <h1>Счетчик: {count}</h1>
+            <button onClick={() => setCount(count + 1)}>+1</button>
+            <button onClick={() => setCount(count - 1)}>-1</button>
+            <button onClick={() => setCount(0)}>Сбросить</button>
+        </div>
+    );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
