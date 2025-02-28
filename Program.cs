@@ -5,7 +5,7 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-app.UseStaticFiles();
+app.UseStaticFiles(); // Включает раздачу файлов из wwwroot
 
 
 // Configure the HTTP request pipeline.

@@ -1,7 +1,7 @@
 ﻿const path = require('path');
 
 module.exports = {
-    entry: './wwwroot/js/index.js',
+    entry: './wwwroot/js/index.js', // Укажите путь к index.js
     output: {
         path: path.resolve(__dirname, 'wwwroot/dist'),
         filename: 'bundle.js',

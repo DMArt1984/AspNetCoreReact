@@ -1,17 +1,12 @@
-﻿import React, { useState } from "react";
+﻿import React from "react";
 import ReactDOM from "react-dom";
 
-function App() {
-    const [count, setCount] = useState(0);
+console.log("✅ React-код загружен!");
 
-    return (
-        <div style={{ textAlign: "center", marginTop: "50px" }}>
-            <h1>Счетчик: {count}</h1>
-            <button onClick={() => setCount(count + 1)}>+1</button>
-            <button onClick={() => setCount(count - 1)}>-1</button>
-            <button onClick={() => setCount(0)}>Сбросить</button>
-        </div>
-    );
+document.getElementById("root").innerHTML = "<h1>Проверка!</h1>"; // Вставка текста напрямую
+
+function App() {
+    return <h1>Привет из React!</h1>;
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
